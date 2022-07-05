@@ -82,6 +82,6 @@ namespace AV.BO
         [Required]
         [Column(TypeName = "Varchar(20)")]
         public string EmpresaCreadora { get; set; }
-    
+     
     }
 }
