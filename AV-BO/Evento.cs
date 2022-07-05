@@ -33,15 +33,17 @@ namespace AV.BO
         // VER como poner aca el set dateformat dmy y NOTMAPPED
         [Required]
         [NotMapped]
-        [Column(TypeName = "DateTime")]
-        public string Fecha { get; set; }
+        [Column(TypeName = "Date")]
+        public DateTime Fecha { get; set; }
 
-        
+       
         // ver con Emiliano tipo HORA
         [Required]
         [NotMapped]
-        [Column(TypeName = "time")]
-        public string Hora { get; set; }
+        [Column(TypeName = "Time(7)")]
+        public TimeSpan Hora { get; set; }
+
+        //ver duracion del evento
 
         [Required]
         [Column(TypeName = "VarChar(100)")]
@@ -49,8 +51,8 @@ namespace AV.BO
 
         // ver maximo y minimo de numero con emiliano
         [Required]
-        [Column(TypeName = "Int")]
-        public int NroCupos { get; set; }
+        [Column(TypeName = "Integer")]
+        public int NroCupos { get; set ; }
 
         // ver maximo y minimo de numero con emiliano
         [Required]
